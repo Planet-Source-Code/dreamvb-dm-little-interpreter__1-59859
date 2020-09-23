@@ -1,0 +1,11 @@
+sub main()
+{
+    char lzFile;
+    char sBuffer;
+    lzFile = "C:\test.txt";
+
+    set myObj = CreateMyCom("DmScriptLib.FileIo");
+    sBuffer = MyComCall(myObj,"OpenTextFile",dmMethod,lzFile);
+    echo sBuffer;
+    close;
+}

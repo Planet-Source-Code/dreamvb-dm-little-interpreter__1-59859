@@ -1,0 +1,13 @@
+sub main()
+{
+   int sum[2];
+   int answer;
+
+   sum[0] = 60;
+   sum[1] = 50;
+   sum[2] = 40;
+   
+   answer = sum[0] + sum[1] + sum[2];
+   echo answer; // returns 150
+   close;
+}

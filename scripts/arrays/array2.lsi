@@ -1,0 +1,14 @@
+sub main()
+{
+  // array example using strings;
+  char name[4];
+  name[0] = "H";
+  name[1] = "e";
+  name[2] = "l";
+  name[3] = "l";
+  name[4] = "o";
+  
+  echo name[0] & name[1] & _
+  name[2] & name[3] & name[4];
+  close;
+}

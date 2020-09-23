@@ -1,0 +1,44 @@
+// little example shows a very basic clock.
+
+sub tmr1_timer()
+{
+   static1.caption = time;
+}
+
+sub button1_click()
+{
+   int ans;
+   ans = echo("Do you want to quite now?", mb_yesno + mb_question,"Quit...");
+   if (ans = mb_no) then
+     break;
+   else
+     echo "Good Bye";
+     close;
+     break;
+  end if
+
+}
+
+Sub GUICreate()
+{
+    //Dialog code
+    dialog.height = 1553;
+    dialog.width = 3593;
+    dialog.backcolor = dmblack
+    dialog.enabled = True;
+    dialog.caption = "Clock"
+    //Controls Code
+    AddControl STATIC,0,187,353,2928,True,"00:00:00"
+    AddControl BUTTON,755,187,350,1215,True,"E&xit"
+    AddControl TMR,1,1000;
+    static1.fontsize = 24;
+    static1.backstyle = 0;
+    static1.autosize = true;
+    static1.forecolor = dmyellow;
+    dialog.show;
+}
+
+sub main()
+{
+  call GUICreate();
+}

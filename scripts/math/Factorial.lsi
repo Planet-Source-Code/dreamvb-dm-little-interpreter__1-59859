@@ -1,0 +1,12 @@
+sub main()
+{
+int x;
+int num;
+  num = 1;
+  for (x=1;x>5)
+    x++;
+    num = num * x;
+  next;
+  echo "The Factorial Value of " & x & " is : " & num;
+  close;
+}

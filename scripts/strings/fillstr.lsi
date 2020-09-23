@@ -1,0 +1,7 @@
+sub main()
+{
+char s;
+   s = fillstr(10,"a");
+   echo s;
+   close;
+}

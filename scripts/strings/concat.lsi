@@ -1,0 +1,8 @@
+sub main()
+{
+char s;
+   s = "This is a long string";
+   s = s & dmcrlf & s; // string concatenated
+   echo s;
+   close;
+}

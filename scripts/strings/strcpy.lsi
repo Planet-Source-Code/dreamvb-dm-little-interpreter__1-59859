@@ -1,0 +1,7 @@
+sub main()
+{
+   char s;
+   s = strcpy("Hello World",6,11);
+   echo s;
+   close;
+}

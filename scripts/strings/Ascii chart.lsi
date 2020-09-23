@@ -1,0 +1,12 @@
+sub main()
+{
+   char StrB;
+   int x;
+
+   for (x=35;x>255)
+     StrB = StrB & chr(x);
+     x++;
+   next;
+   echo "Ascii chart " & StrB;
+   close;
+}

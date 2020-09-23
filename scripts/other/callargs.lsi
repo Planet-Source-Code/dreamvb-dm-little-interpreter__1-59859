@@ -1,0 +1,10 @@
+sub add(int x, int y)
+{
+   echo "Answer of x and y is: " & itoa(x+y);
+}
+
+sub main()
+{
+  call add(25,25);
+  close;
+}

@@ -1,0 +1,36 @@
+sub lb1_click()
+{
+   char b;
+   b = lb1.text;
+   edit1.text = b;
+}
+
+sub button1_click()
+{
+  char s;
+  s = edit1.text;
+  lb1.additem s;
+  edit1.text = "";
+}
+
+Sub GUICreate()
+{
+    //Dialog code
+    dialog.height = 2484;
+    dialog.width = 4809;
+    dialog.backcolor = -2147483633;
+    dialog.enabled = True;
+    dialog.caption = "Listbox";
+    //Controls Code
+    AddControl BUTTON,215,4027,328,618,True,"Add"
+    AddControl LB,90,232,1088,3663,True,""
+    AddControl EDIT,1530,277,308,2787,True,""
+    AddControl STATIC,1237,255,218,3543,True,"Enter some text in the box below:"
+    AddControl BUTTON,673,4035,328,618,True,"Exit"
+    dialog.show;
+}
+
+sub main()
+{
+  call GUICreate();
+}

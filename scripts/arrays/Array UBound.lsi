@@ -1,0 +1,6 @@
+sub main()
+{
+  char s[25];
+  echo "Size of array s is " & UBound(s);
+  close;
+}

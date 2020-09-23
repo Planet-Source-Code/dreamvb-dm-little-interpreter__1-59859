@@ -1,0 +1,11 @@
+// while loop example
+
+sub main()
+{
+  int n;
+  while (n>5)
+    echo "Value of n is " & n;
+    n++;
+  loop;
+  close;
+}

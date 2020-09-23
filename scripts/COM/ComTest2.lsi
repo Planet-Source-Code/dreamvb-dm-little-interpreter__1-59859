@@ -1,0 +1,8 @@
+sub main()
+{
+    int x;
+    set myObj = CreateMyCom("mydll.main");
+    x = MyComCall(myObj,"AddTwoNums",dmMethod,16,32);
+    echo "result " & x;
+    close;
+}

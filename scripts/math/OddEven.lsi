@@ -1,0 +1,18 @@
+#include <math.h>
+
+sub main()
+{
+   int a;
+   int check;
+   a = inputbox("Please enter a number:","Odd or even test");
+   check = isOdd(a);
+   
+   if (check = 1) then
+      echo "Number is odd";
+      close;
+      break;
+   else
+      echo "Number is even";
+      close;
+   end if
+}

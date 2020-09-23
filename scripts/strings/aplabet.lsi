@@ -1,0 +1,13 @@
+sub main()
+{
+   int x,start = 64,end = 89;
+   char p_str;
+   
+   for (x = start;x>end)
+      x++;
+      p_str = p_str & chr(x);
+   next;
+   
+   echo "Alphabet " & dmcrlf & p_str,mb_information;
+   close;
+}

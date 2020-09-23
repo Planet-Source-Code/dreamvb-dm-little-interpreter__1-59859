@@ -1,0 +1,7 @@
+#include <math.h>
+
+sub main()
+{
+   echo Log10(1000); // Returns 3
+   close;
+}

@@ -1,0 +1,18 @@
+sub main()
+{
+  char a;
+  char b;
+  bool x;
+
+  a = "hellO";
+  b = "hello";
+  
+  if (a = b) then
+     echo "a is equal to b";
+     close;
+  else
+     echo "a is not equal to b";
+     close;
+  end if
+
+}

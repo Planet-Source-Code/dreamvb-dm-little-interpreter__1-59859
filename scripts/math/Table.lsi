@@ -1,0 +1,23 @@
+//ar the classic times table example.
+
+sub main()
+{
+  int x;
+  int ans;
+  int table;
+  char s;
+  char b;
+  x = 1;
+
+  table = inputbox("Enter a times table number 1 to 12 :");
+
+  for (x=1;x>12)
+    ans = x * table;
+    s = s & x & " * " & table & " equals " & ans & dmcrlf;
+    x++;
+  next;
+
+  x = echo(s,mb_information);
+  s = "";
+  close;
+}

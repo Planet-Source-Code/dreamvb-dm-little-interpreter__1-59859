@@ -1,0 +1,26 @@
+sub button1_click()
+{
+   char s;
+   s = edit1.text;
+   echo "You typed in the text box " & s;
+   close;
+}
+
+Sub GUICreate()
+{
+    //Dialog code
+    dialog.height = 1411;
+    dialog.width = 1680;
+    dialog.backcolor = -2147483633;
+    dialog.enabled = True;
+    dialog.caption = "";
+    //Controls Code
+    AddControl BUTTON,568,187,350,1215,True,"Click"
+    AddControl EDIT,127,187,300,1215,True,"Type Here"
+    dialog.show;
+}
+
+sub main()
+{
+  call GUICreate();
+}

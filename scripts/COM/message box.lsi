@@ -1,0 +1,18 @@
+sub main()
+{
+  int x;
+  
+  const msg_title = "A Message Box from Com";
+  set myObj = CreateMyCom("mydll.main");
+
+  x = MyComCall(myObj,"MessageBox",dmMethod,msg_title,mb_information+mb_yesno,"hello");
+
+  if (x = 6) then
+    echo "Button Pressed Yes";
+    close;
+    break;
+  else
+    echo "Button Pressed No";
+    close;
+  end if
+}

@@ -1,0 +1,7 @@
+sub main()
+{
+    char s;
+    s = "Scripting tool made for windows developers";
+    echo strlen(s);
+    close;
+}

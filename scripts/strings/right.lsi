@@ -1,0 +1,8 @@
+sub main()
+{
+   char a,b;
+   a = "Hello";
+   b = right(a,4); // returns ello
+   echo b;
+   close;
+}

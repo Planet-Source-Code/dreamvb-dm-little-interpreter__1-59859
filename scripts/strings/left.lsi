@@ -1,0 +1,8 @@
+sub main()
+{
+   char a,b;
+   a = "Microsoft";
+   b = left(a,5); // returns Micro
+   echo b;
+   close;
+}

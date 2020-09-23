@@ -1,0 +1,5 @@
+VBGROUP 5.0
+StartupProject=src\dmFramework.vbp
+Project=dmcomp\dmcomp.vbp
+Project=ComClass\FileIo\DmScriptLib.vbp
+Project=ComClass\myDll\myDll.vbp

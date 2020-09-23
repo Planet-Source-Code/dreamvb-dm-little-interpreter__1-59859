@@ -1,0 +1,10 @@
+sub main()
+{
+    int x;
+    echo "The value of x is : " & x; // 0
+    x++;
+    echo "The value of x is : " & x; // 1
+    x++;
+    echo "The value of x is : " & x; // 2
+    close;
+}
