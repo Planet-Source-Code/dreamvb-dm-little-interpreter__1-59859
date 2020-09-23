@@ -1,0 +1,6 @@
+<#include <datetime.h>
+
+sub main()
+{
+    echo now();
+}

@@ -1,0 +1,7 @@
+sub main()
+{
+   enum days {Sun,Mon,Tue,Wed,Thu,Fri,Sat};
+   echo "value of Sun is " & Sun;
+   echo "value of Thu is " & Thu;
+   close;
+}

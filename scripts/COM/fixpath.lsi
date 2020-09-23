@@ -1,0 +1,11 @@
+sub main()
+{
+    int x;
+    char lzPath;
+    lzPath = "C:\testfolder";
+
+    set myObj = CreateMyCom("DmScriptLib.FileIo");
+    lzPath = MyComCall(myObj,"FixPath",dmMethod,lzPath); // Add a backslash
+    echo lzPath;
+    close;
+}

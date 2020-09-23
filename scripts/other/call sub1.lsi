@@ -1,0 +1,12 @@
+sub test()
+{
+   echo "hello from sub test";
+}
+
+sub main()
+{
+  echo "in sub main";
+  call test();
+  echo "back in sub main";
+  close;
+}

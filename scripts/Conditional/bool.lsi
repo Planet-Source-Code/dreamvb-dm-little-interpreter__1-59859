@@ -1,0 +1,9 @@
+sub main()
+{
+bool x;
+    x = True + 1; 
+    echo x; // will result in false since -1 + 1 = 0
+    x = False + 1;
+    echo x; // Will result in True since 0 + 1 = 1
+    close;
+}

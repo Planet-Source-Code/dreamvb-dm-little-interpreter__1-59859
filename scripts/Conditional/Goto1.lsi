@@ -1,0 +1,9 @@
+sub main()
+{
+
+   Goto end:
+   echo "This line will not be called";
+   end:
+   echo "Goto Example";
+   close;
+}

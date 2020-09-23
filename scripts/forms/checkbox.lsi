@@ -1,0 +1,45 @@
+sub checkbox1_click()
+{
+  bool x;
+  x = checkbox1.value;
+  static1.fontbold = x;
+}
+
+sub checkbox2_click()
+{
+  bool x;
+  x = checkbox2.value;
+  static1.FontItalic = x;
+}
+
+sub checkbox3_click()
+{
+  bool x;
+  x = checkbox3.value;
+  static1.FontUnderline = x;
+}
+
+sub button1_click()
+{
+   close;
+}
+
+Sub GUICreate()
+{
+    //Dialog code
+    dialog.height = 2117;
+    dialog.width = 3677;
+    dialog.backcolor = -2147483633;
+    dialog.enabled = True;
+    dialog.caption = "Font";
+    //Controls Code
+    AddControl STATIC,263,315,286,3081,True,"Select a font style below:"
+    AddControl CHECKBOX,735,375,188,828,True,"Bold"
+    AddControl CHECKBOX,735,1365,225,828,True,"Italic"
+    AddControl CHECKBOX,735,2355,203,1041,True,"Underline"
+    AddControl BUTTON,1242,322,350,1215,True,"E&xit"
+    dialog.show;
+sub main()
+{
+  call GUICreate();
+}

@@ -1,0 +1,8 @@
+sub main()
+{
+   char name;
+   int ret,age;
+   name = inputbox("What is your name:","Name");
+   age = inputbox("What is your age " & name);
+   ret = echo("Hello " & name & " You are " & age & " years Old today");
+}

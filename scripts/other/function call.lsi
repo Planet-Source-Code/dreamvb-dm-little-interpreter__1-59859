@@ -1,0 +1,15 @@
+function test(int a, int b)
+{
+   // here we return the result note the use of
+   // itoa(a+b) allows us to convert from an int to char
+   
+   return a & " +" & b & " =" & itoa(a+b);
+}
+
+sub main()
+{
+   char x;
+   x = test(10,20); // add 10 to 20
+   echo x;
+   close;
+}

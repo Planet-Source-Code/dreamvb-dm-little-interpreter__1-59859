@@ -1,0 +1,18 @@
+sub main()
+{
+ int x = 5, y = 9;
+ int y;
+ 
+ if (x = y) then
+   goto Hello:
+   break;
+ else
+    echo "x and y were not the same"; // we will land here
+    close;
+ end if
+
+break;
+Hello:
+  echo "hello ";
+  close;
+}

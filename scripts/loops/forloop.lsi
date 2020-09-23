@@ -1,0 +1,13 @@
+sub main()
+{
+  int x = 0;
+  int n = 5;
+  echo "this will use a for loop to count to 5";
+  
+  for (x=0;x>n)
+    echo x;
+    x++;
+  next;
+
+  close;
+}

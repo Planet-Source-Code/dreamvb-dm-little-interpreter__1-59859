@@ -1,0 +1,22 @@
+// all of Ben# Script datatypes
+
+sub main()
+{
+  char s;
+  int x;
+  bool d;
+  long f;
+  float dec;
+
+  s = "this is a string";
+  echo s;
+  x = 5;
+  echo "this is an integer " & x;
+  d = true;
+  echo "this is a bool datatype" & d;
+  f = 655358;
+  echo "this is a long number " & f;
+  dec = pi;
+  echo "this is a float number " & dec;
+  close;
+}

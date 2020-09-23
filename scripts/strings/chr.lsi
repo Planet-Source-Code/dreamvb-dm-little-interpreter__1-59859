@@ -1,0 +1,6 @@
+sub main()
+{
+  echo chr(65); // A
+  echo chr(66); // B
+  close;
+}

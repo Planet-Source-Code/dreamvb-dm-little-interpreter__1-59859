@@ -1,0 +1,17 @@
+// Joins an array into a string
+
+sub main()
+{
+   char final;
+   char test[4];
+
+   test[0] = "H";
+   test[1] = "e";
+   test[2] = "l";
+   test[3] = "l";
+   test[4] = "o";
+  
+   final = arrytostr(test,final); // returns Hello
+   echo final,mb_information;
+   close;
+}

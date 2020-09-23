@@ -1,0 +1,11 @@
+sub main()
+{
+// date and time
+   echo "Todays date is " & date;
+   echo "The time is now " & time;
+
+   // You can also set date and time eg
+   // date = enter your date
+   // time = enter your time
+   close;
+}

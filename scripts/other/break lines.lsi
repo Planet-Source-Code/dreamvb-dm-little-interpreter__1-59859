@@ -1,0 +1,11 @@
+sub main()
+{
+int x;
+   // Note how we use the underscore _ to break down lines
+   
+   x = echo("This is a message box" _
+   & dmcrlf & "We can use the _ underscore to break down long lines", _
+   mb_information, _
+   "Messagebox Title");
+   close;
+}

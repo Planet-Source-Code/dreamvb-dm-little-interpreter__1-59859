@@ -1,0 +1,13 @@
+sub main()
+{  
+  char s[2];
+  s[0] = "X";
+  s[1] = "Y";
+  s[2] = "Z";
+  
+  echo "array size is : " & UBound(s); //returns 2
+  destroy s; // destroy array contents
+
+  echo "array size is : " & UBound(s); // returns -1
+  close;
+}

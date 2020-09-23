@@ -1,0 +1,8 @@
+sub main()
+{
+    char s;
+    set myObj = CreateMyCom("mydll.main");
+    s = MyComCall(myObj,"StrFuncReturn",dmMethod);
+    echo s;
+    close;
+}

@@ -1,0 +1,7 @@
+sub main()
+{
+  int x;
+  x = CountIF("Microsoft","o"); // returns 2
+  echo x;
+  close;
+}

@@ -1,0 +1,16 @@
+sub main()
+{
+    char x;
+    x = echo("Do you like Little# Interpreter",mb_yesno+mb_question);
+
+    switch x
+       case: mb_yes
+         echo "I am glad to here that";
+         break;
+         close;
+       case: mb_no
+         echo "well you cannot please everyone";
+         break;
+         close;
+    end;
+}

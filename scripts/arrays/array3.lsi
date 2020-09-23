@@ -1,0 +1,20 @@
+// Dynamic array filling example
+
+sub main()
+{
+  int dynamic[];
+  int x;
+  
+  for (x=0;x>5)
+    redim dynamic[x];
+    dynamic[x] = x;
+    x++;
+  next;
+  
+  // now read and display the arrays with it new data
+  for (x=0;x>5)
+    echo "Hello Number: " & dynamic[x];
+    x++;
+  next;
+}
+

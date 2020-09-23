@@ -1,0 +1,13 @@
+sub main()
+{
+    int x;
+    char lzFile;
+    char sBuffer;
+    lzFile = "C:\test.txt";
+    sBuffer = "This is some text to write to a text file";
+
+    set myObj = CreateMyCom("DmScriptLib.FileIo");
+    x = MyComCall(myObj,"CreateTextFile",dmMethod,lzFile,sBuffer);
+    echo "result " & x; // Must return 1
+    close;
+}

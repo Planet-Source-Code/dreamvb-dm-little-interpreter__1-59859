@@ -1,0 +1,11 @@
+// while loop counting down
+
+sub main()
+{
+  int n = 11;
+  while (n < 0)
+    echo n;
+    n--;
+  loop;
+  close;
+}

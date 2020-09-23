@@ -1,0 +1,12 @@
+sub main()
+{
+  int a;
+  int b;
+  int result;
+
+  a = $AB;
+  b = $BC;
+  result = $100 + a + b; // returns 615
+  echo result;
+  close;
+}

@@ -1,0 +1,49 @@
+sub ShowSysInfo()
+{
+  static8.caption = env("COMPUTERNAME");
+  static9.caption = env("USERNAME");
+  static10.caption = env("OS");
+  static11.caption = env("WINDIR");
+  static12.caption = env("HOMEDRIVE");
+  static13.caption = Date;
+  static14.caption = Time;
+}
+
+sub button1_click()
+{
+  close;
+}
+
+Sub GUICreate()
+{
+    //Dialog code
+    dialog.height = 3864;
+    dialog.width = 5499;
+    dialog.backcolor = -2147483633;
+    dialog.enabled = True;
+    dialog1.caption = "Computer Info";
+    //Controls Code
+
+    AddControl STATIC,150,135,218,1368,True,"Computer Name";
+    AddControl STATIC,480,135,240,1005,True,"User";
+    AddControl STATIC,810,135,240,1005,True,"OS";
+    AddControl STATIC,1185,135,218,1248,True,"Windows Folder";
+    AddControl STATIC,1598,135,240,1005,True,"Home Drive";
+    AddControl STATIC,1973,135,240,1005,True,"Date";
+    AddControl STATIC,2393,135,240,1005,True,"Time";
+    AddControl STATIC,150,1920,218,3198,True,"";
+    AddControl STATIC,480,1920,218,3228,True,"";
+    AddControl STATIC,800,1920,218,3273,True,"";
+    AddControl STATIC,1185,1920,233,3333,True,"";
+    AddControl STATIC,1598,1920,203,3288,True,"";
+    AddControl STATIC,1973,1920,218,3288,True,"";
+    AddControl STATIC,2393,1920,233,3273,True,"";
+    AddControl BUTTON,3020,4172,350,1000,True,"Close";
+    call ShowSysInfo();
+    dialog.show;
+}
+
+sub main()
+{
+  call GUICreate();
+}
